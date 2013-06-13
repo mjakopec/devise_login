@@ -11,27 +11,43 @@
  *= require_self
  *= require_tree .
 */
-.brand {
-  float: left;
-  padding-right: 8px;
+#flash_alert {color:red;}
+#flash_notice {color:red;}
+.new_user  {height:150px;}
+.new_user div label{font-size:12px;}
+.new_user div label[for="user_email"], .new_user div label[for="user_password"]
+{margin-left:30px;}
+.new_user div input[type='checkbox']
+{margin-left:30px;
+margin-top:10px;}
+.new_user div input[type='email'], .new_user div input[type='password']
+{width: 325px;
+margin-left:30px;
+font-size: 12px;
+padding: 7px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+background-color: #c9c3e6;
 }
-ul.nav {
-  list-style: none;
-  margin: 0 0 2em;
-  padding: 0;
+input[value="Sign in"], input[value="Send me reset password instructions"], .likebuton
+{float:right;margin-top:5px; margin-right:30px;
+padding:6px 20px;
+  -moz-box-shadow:#000 0 0 3px 0;-webkit-box-shadow:#000 0 0 3px 0;-o-box-shadow:#000 0 0 3px 0;box-shadow:#000 0 0 3px 0;
+  -moz-border-radius:14px;-webkit-border-radius:14px;border-radius:14px;-moz-box-shadow:2px 2px 6px #232323;-webkit-box-shadow:2px 2px 6px #232323;
+  box-shadow:2px 2px 6px #232323;
+  background-color:#9e8aff;
+  text-shadow:#c9c3e6 0 0 2px;
+  color:#16153b;font-size:14px;
+  background-repeat:repeat-x;background-position:center bottom;padding:7px 20px 7px 20px;
+  font-weight:bold;cursor:pointer;text-decoration:none}
+
+input[value="Sign in"]:hover, input[value="Send me reset password instructions"]:hover, .likebuton:hover
+{background-color: #c9c3e6;
+text-decoration: none;
 }
-ul.nav li {
-  display: inline;
-}
-#flash_notice, #flash_alert {
-  padding: 5px 8px;
-  margin: 10px 0;
-}
-#flash_notice {
-  background-color: #CFC;
-  border: solid 1px #6C6;
-}
-#flash_alert {
-  background-color: #FCC;
-  border: solid 1px #C66;
-}
+
+input[type="checkbox"]
+{padding-top:20px;}
+
+.dialog a {color:red;visibility:hidden;}
